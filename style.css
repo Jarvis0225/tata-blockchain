@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 400px; /* 控制显示高度 */
+    overflow-y: auto; /* 滚动显示 */
+}
+
+.result-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-type {
+    font-weight: bold;
+}
+
+.transaction-hash,
+.transaction-from,
+.transaction-to {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.logs-header {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.logs-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.logs-list li {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
